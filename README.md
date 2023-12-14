@@ -16,34 +16,30 @@ To set up the project locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install dependencies:
+   1. `composer install`
 4. Compile assets:
-   1. npm install
-   2. npm run dev
+   1. `npm install`
+   2. `npm run dev`
 5. Generate an application key
-   1. php artisan key:generate
+   1. `php artisan key:generate`
 6. Run migrations and seed the database
-   1. php artisan migrate --seed
+   1.` php artisan migrate --seed`
 7. Set the necessary environment variables for websockets in your `.env` file
 
+```sh
 PUSHER_APP_ID=some-random-value (e.g dd129e50f7c94e1786)
-
 PUSHER_APP_KEY=some-random-value (e.g 4e1786951ea7f588e70a)
-
 PUSHER_APP_SECRET=some-random-value (e.g sec-fc6ec942dca153a3fac9b80a15)
-
 PUSHER_HOST=127.0.0.1
-
 PUSHER_PORT=6001
-
 PUSHER_SCHEME=http
-
 PUSHER_APP_CLUSTER=mt1
-
 PUSHER_ENCRYPTED=false
+```
 
 
 8. Start the WebSocket server
-   1. php artisan websocket:serve
+   1. `php artisan websocket:serve`
 
 
 
