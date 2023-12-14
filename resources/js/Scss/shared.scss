@@ -1,0 +1,101 @@
+.text-decoration-none {
+    text-decoration: none;
+}
+.gap-1 {
+    gap: 5px;
+}
+.gap-2 {
+    gap: 10px;
+}
+
+.table-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+    padding: 10px 16px 10px 16px;
+}
+.editor {
+    height: 500px;
+}
+.ck-editor__editable_inline {
+    min-height: 500px !important;
+}
+
+.ck-editor {
+    position: relative;
+    font-family: "Leto", sans-serif;
+    // max-width: 660px !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        margin-bottom: 0.5rem;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+    h2,
+    .h2 {
+        font-size: 2rem;
+    }
+    h3,
+    .h3 {
+        font-size: 1.75rem;
+    }
+    h4,
+    .h4 {
+        font-size: 1.5rem;
+    }
+}
+.ck-editor__editable {
+    max-height: 400px;
+}
+.q-header {
+    z-index: 1010;
+}
+
+.bordered {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.rounded-xl {
+    border-radius: 25px !important;
+}
+.rounded-xs {
+    border-radius: 3px !important;
+}
+.rounded-sm {
+    border-radius: 5px !important;
+}
+.rounded {
+    border-radius: 10px !important;
+}
+
+.cursor-grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.cursor-grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.text-sm {
+    font-size: 12px;
+}
+.q-table th {
+    font-weight: 600 !important;
+}
